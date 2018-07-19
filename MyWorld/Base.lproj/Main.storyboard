@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -494,17 +495,15 @@
                                             <action selector="chatButton:" destination="XaH-Fv-LwE" eventType="touchUpInside" id="q4q-w5-HCq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsB-dH-b9I">
-                                        <rect key="frame" x="173" y="10" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Mew-or-aTt"/>
-                                            <constraint firstAttribute="width" constant="40" id="qhF-pF-uEu"/>
-                                        </constraints>
-                                        <state key="normal" backgroundImage="globlecamera"/>
-                                        <connections>
-                                            <action selector="cameraButton:" destination="XaH-Fv-LwE" eventType="touchUpInside" id="cYr-pq-vFv"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Y0e-8Y-voa">
+                                        <rect key="frame" x="173" y="10" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XSd-Z1-iNv">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eL1-y1-xHO">
                                         <rect key="frame" x="366" y="8" width="40" height="40"/>
                                         <constraints>
@@ -516,19 +515,34 @@
                                             <action selector="MyPageButton:" destination="XaH-Fv-LwE" eventType="touchUpInside" id="b0e-AE-51Y"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsB-dH-b9I">
+                                        <rect key="frame" x="195" y="8" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Mew-or-aTt"/>
+                                            <constraint firstAttribute="width" constant="40" id="qhF-pF-uEu"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="globlecamera"/>
+                                        <connections>
+                                            <action selector="cameraButton:" destination="XaH-Fv-LwE" eventType="touchUpInside" id="cYr-pq-vFv"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="LsB-dH-b9I" firstAttribute="leading" secondItem="bLo-vm-3JQ" secondAttribute="trailing" constant="125" id="CWY-OB-vRX"/>
-                                    <constraint firstItem="LsB-dH-b9I" firstAttribute="top" secondItem="8uk-GW-pMS" secondAttribute="bottom" constant="8" id="Hmm-JH-VEf"/>
                                     <constraint firstItem="bLo-vm-3JQ" firstAttribute="top" secondItem="8uk-GW-pMS" secondAttribute="bottom" constant="6" id="Huo-xM-ZdK"/>
+                                    <constraint firstItem="LsB-dH-b9I" firstAttribute="baseline" secondItem="bLo-vm-3JQ" secondAttribute="baseline" id="Ihv-t2-E3o"/>
+                                    <constraint firstItem="LsB-dH-b9I" firstAttribute="firstBaseline" secondItem="bLo-vm-3JQ" secondAttribute="firstBaseline" id="LkA-pe-EwO"/>
+                                    <constraint firstItem="LsB-dH-b9I" firstAttribute="leading" secondItem="zFg-Ji-RvK" secondAttribute="leading" constant="195" id="UY3-nK-Cix"/>
                                     <constraint firstItem="eL1-y1-xHO" firstAttribute="top" secondItem="8uk-GW-pMS" secondAttribute="bottom" constant="6" id="VSS-cX-rPa"/>
                                     <constraint firstAttribute="height" constant="53" id="XSa-08-fiz"/>
+                                    <constraint firstItem="LsB-dH-b9I" firstAttribute="top" secondItem="eL1-y1-xHO" secondAttribute="top" id="aDe-XT-a75"/>
                                     <constraint firstItem="8uk-GW-pMS" firstAttribute="top" secondItem="zFg-Ji-RvK" secondAttribute="top" id="anZ-lO-HVh"/>
                                     <constraint firstAttribute="trailing" secondItem="eL1-y1-xHO" secondAttribute="trailing" constant="8" id="b3L-fB-rZV"/>
                                     <constraint firstItem="bLo-vm-3JQ" firstAttribute="leading" secondItem="zFg-Ji-RvK" secondAttribute="leading" constant="8" id="fVL-i0-ZrL"/>
+                                    <constraint firstItem="LsB-dH-b9I" firstAttribute="baseline" secondItem="eL1-y1-xHO" secondAttribute="baseline" id="gzp-WQ-zNZ"/>
                                     <constraint firstItem="8uk-GW-pMS" firstAttribute="leading" secondItem="zFg-Ji-RvK" secondAttribute="leading" id="j0S-pb-uHs"/>
                                     <constraint firstAttribute="trailing" secondItem="8uk-GW-pMS" secondAttribute="trailing" id="unw-YU-xUh"/>
+                                    <constraint firstItem="LsB-dH-b9I" firstAttribute="firstBaseline" secondItem="eL1-y1-xHO" secondAttribute="firstBaseline" id="xMt-Q3-pmD"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -7006,7 +7020,7 @@
                                             <constraint firstAttribute="height" constant="35" id="a22-hG-G8e"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="Forget password?">
+                                        <state key="normal" title="Forgot password?">
                                             <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
