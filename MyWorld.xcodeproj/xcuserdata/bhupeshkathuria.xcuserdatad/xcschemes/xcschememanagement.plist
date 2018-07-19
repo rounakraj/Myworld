@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MyWorldAPP.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B6F28F1B1FD521FB00E6933C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6F28F2F1FD521FC00E6933C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6F28F3A1FD521FC00E6933C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

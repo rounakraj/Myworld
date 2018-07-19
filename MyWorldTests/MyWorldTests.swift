@@ -2,8 +2,8 @@
 //  MyWorldTests.swift
 //  MyWorldTests
 //
-//  Created by Bhupesh Kathuria on 04/12/17.
-//  Copyright © 2017 Bhupesh Kathuria. All rights reserved.
+//  Created by MyWorld on 04/12/17.
+//  Copyright © 2017 MyWorld. All rights reserved.
 //
 
 import XCTest
