@@ -996,7 +996,7 @@
 					B6F28F1B1FD521FB00E6933C = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
 								enabled = 1;
@@ -1539,8 +1539,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MyWorld/MyWorld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kumar Rounak (SK476XA3Y7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kumar Rounak (SK476XA3Y7)";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = THC6677W2Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1554,8 +1554,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.raunak.MyWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "72cdb722-0136-4582-a28d-8afe2f4252ed";
-				PROVISIONING_PROFILE_SPECIFIER = MyWorld_Dev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyWorld/MyWorld-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -1573,8 +1573,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MyWorld/MyWorld.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kumar Rounak (SK476XA3Y7)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kumar Rounak (SK476XA3Y7)";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = THC6677W2Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1588,8 +1588,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.raunak.MyWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f7d073d3-7bc6-4838-8121-bdde5b7df752";
-				PROVISIONING_PROFILE_SPECIFIER = MyWorld_Dev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyWorld/MyWorld-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
